@@ -29,7 +29,7 @@ cacheSolve <- function(x) {
         return(i)
     }
     data <- x$get()
-    i <- ginv(data)
+    i <- solve(data)
     x$setInverse(i)
     i 
 }
